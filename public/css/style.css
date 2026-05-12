@@ -1,184 +1,296 @@
 body {
-    background-color: #0D0D0D;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    color: #E0E0E0;
+  background-color: #0d0d0d;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #e0e0e0;
 }
 
+/* HEADER */
+
 header {
-    background-color: #1E1E1E;
-    width: 100vw;
-    height: 100px;
-    padding: 0px 100px 0px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 4px 22px #FF4D00;
-    font-family: 'Space Grotesk', sans-serif;
+  background-color: #1e1e1e;
+  width: 100vw;
+  height: 100px;
+  padding: 0px 100px 0px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 22px #ff4d00;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 svg {
-    width: 250px;
-    padding-bottom: 10px;
+  width: 250px;
+  padding-bottom: 10px;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  list-style-type: none;
 }
 
 .btn_navbar {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 #btn_home {
-    color: #fff;
-    text-shadow: 0px 0px 4px #fff;
+  color: #fff;
+  text-shadow: 0px 0px 4px #fff;
 }
 
 .div_user {
-    display: flex;
-    gap: 45px;
-    justify-content: space-between;
+  display: flex;
+  gap: 45px;
+  justify-content: space-between;
 }
 
 .btn_login {
-    text-decoration: none;
-    color: inherit;
-    padding: 11px 48px;
-    transition: ease 0.5s;
+  text-decoration: none;
+  color: inherit;
+  padding: 11px 48px;
+  transition: ease 0.5s;
 }
 
 .btn_login:hover {
-    color: #04BFFC;
-    text-shadow: 0px 0px 4px #04BFFC;
-    scale: 1.05;
+  color: #04bffc;
+  text-shadow: 0px 0px 4px #04bffc;
+  scale: 1.05;
 }
 
 .btn_cadastro {
-    background-color: #FF4D00;
-    text-decoration: none;
-    color: inherit;
-    padding: 11px 48px;
-    border-radius: 16px;
-    transition: ease 0.5s;
+  background-color: #ff4d00;
+  text-decoration: none;
+  color: inherit;
+  padding: 11px 48px;
+  border-radius: 16px;
+  transition: ease 0.5s;
 }
 
 .btn_cadastro:hover {
-    background-color: #1E1E1E;
-    border: #04BFFC 2px solid;
-    color: #04BFFC;
-    box-shadow: 0px 0px 20px #04BFFC;
-    text-shadow: 0px 0px 4px #04BFFC;
-    scale: 1.05;
+  background-color: #1e1e1e;
+  border: #04bffc 2px solid;
+  color: #04bffc;
+  box-shadow: 0px 0px 20px #04bffc;
+  text-shadow: 0px 0px 4px #04bffc;
+  scale: 1.05;
 }
 
+/* MAIN HOME */
+
 .main_home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
 }
 
 .banner_geek {
-    position: relative;
-    width: 100%;
-    max-width: 1720px;
-    height: 520px;
-    border-radius: 16px;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1720px;
+  height: 520px;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .imagens_artistas {
-    display: flex;
-    height: 100%;
+  display: flex;
+  height: 100%;
 }
 
 .imagens_artistas img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.4);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.4);
 }
 
 .overlay {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 100%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
 }
 
 .overlay h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .highlight {
-    color: #04BFFC;
-    text-shadow: 0px 0px 4px #04BFFC;
+  color: #04bffc;
+  text-shadow: 0px 0px 4px #04bffc;
 }
 
 .buttons {
-    margin-top: 118px;
-    display: flex;
-    gap: 430px;
+  margin-top: 118px;
+  display: flex;
+  gap: 430px;
 }
 
 .btn {
-    max-width: 350px;
-    text-align: center;
-    padding: 15px 80px;
-    border-radius: 16px;
-    margin-bottom: 35px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    background-color: #FF4D00;
-    color: white;
-    text-decoration: none;
-    transition: ease 0.5s;
+  max-width: 350px;
+  text-align: center;
+  padding: 15px 80px;
+  border-radius: 16px;
+  margin-bottom: 35px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #ff4d00;
+  color: white;
+  text-decoration: none;
+  transition: ease 0.5s;
 }
 
 .btn_historia:hover {
-    background-color: #0D0D0D;
-    border: #04BFFC 2px solid;
-    color: #04BFFC;
-    box-shadow: 0px 0px 20px #04BFFC;
-    text-shadow: 0px 0px 4px #04BFFC;
-    scale: 1.05;
+  background-color: #0d0d0d;
+  border: #04bffc 2px solid;
+  color: #04bffc;
+  box-shadow: 0px 0px 20px #04bffc;
+  text-shadow: 0px 0px 4px #04bffc;
+  scale: 1.05;
 }
 
 .btn_artistas:hover {
-    background-color: #0D0D0D;
-    border: #FFD700 2px solid;
-    color: #FFD700;
-    box-shadow: 0px 0px 20px #FFD700;
-    text-shadow: 0px 0px 4px #FFD700;
-    scale: 1.05;
+  background-color: #0d0d0d;
+  border: #ffd700 2px solid;
+  color: #ffd700;
+  box-shadow: 0px 0px 20px #ffd700;
+  text-shadow: 0px 0px 4px #ffd700;
+  scale: 1.05;
+}
+
+/* ARTISTAS */
+
+.sombra_amarela {
+  box-shadow: 0px 4px 22px #ffd700;
+}
+
+.btn_amarelo {
+  background-color: #ffd700;
+  color: #262626;
+}
+
+.destaque_amarelo {
+  color: #ffd700;
+  text-shadow: 0px 0px 4px #ffd700;
+}
+
+.btn_cadastro_artista:hover {
+  border: solid 2px #ffd700;
+  color: #ffd700;
+  box-shadow: 0 0 20px #ffd700;
+  text-shadow: 0 0 4px #ffd700;
+}
+
+.btn_login_artista:hover {
+  color: #ffd700;
+  text-shadow: 0 0 4px #ffd700;
+}
+
+.controles {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+#select {
+  appearance: none;
+  background-color: #1c1c1c;
+  color: white;
+  padding: 10px 40px 10px 15px;
+  font-size: 14px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='yellow' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 18px;
+}
+
+#select:focus {
+  border-color: #ffd700;
+  box-shadow: 0 0 8px rgba(255, 217, 0, 0.3);
+}
+
+#select option {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.controles label {
+  letter-spacing: 0.5px;
+}
+
+.grid_artistas {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(7, auto);
+  gap: 40px;
+  margin: 100px;
+  width: calc(100%-200px);
+}
+
+.card_artista {
+  width: 220px;
+  height: 230px;
+  background-color: #1c1c1c;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
+  cursor: pointer;
+}
+
+.card_artista:hover {
+  background-color: #252525;
+  transform: translateY(-5px);
+}
+.card_artista img {
+  width: 143px;
+  height: 143px;
+  border-radius: 50%; /* Deixa a foto redonda */
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 
 footer {
-    background-color: #1E1E1E;
-    width: 100vw;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Space Grotesk', sans-serif;
+  background-color: #1e1e1e;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 footer a {
-    text-decoration: none;
-    color: #FF4D00;
-    transition: ease 0.5s;
+  text-decoration: none;
+  color: #ff4d00;
+  transition: ease 0.5s;
 }
 
 footer a:hover {
-    text-shadow: 0px 0px 4px #FF4D00;
+  text-shadow: 0px 0px 4px #ff4d00;
 }
