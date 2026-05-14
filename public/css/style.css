@@ -245,6 +245,11 @@ svg {
   width: calc(100%-200px);
 }
 
+.link_artista {
+  text-decoration: none;
+  color: inherit;
+}
+
 .card_artista {
   width: 220px;
   height: 230px;
@@ -259,12 +264,12 @@ svg {
   transition:
     transform 0.2s,
     background-color 0.2s;
-  cursor: pointer;
 }
 
 .card_artista:hover {
   background-color: #252525;
   transform: translateY(-5px);
+  box-shadow: 0 0 20px #ffd700;
 }
 .card_artista img {
   width: 143px;
@@ -272,6 +277,12 @@ svg {
   border-radius: 50%; /* Deixa a foto redonda */
   object-fit: cover;
   margin-bottom: 10px;
+}
+
+.div_login {
+  background-image: url("./assets/imgs/fundo_login.jpg");
+  background-size: cover;
+  margin: 100px;
 }
 
 footer {
