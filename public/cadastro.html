@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FireGeek - Cadastro</title>
+    <script src="./js/sessao.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -109,10 +110,32 @@
     let emailVar = ipt_email.value;
     let senhaVar = ipt_senha.value;
     let confirmacaoSenha = ipt_confirmar.value;
+    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const regexSenha = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/;
 
   if(userVar == "" || emailVar == "" ||senhaVar == "" || confirmacaoSenha == "") {
     cardErro.style.display = "block";
     mensagemErro.innerHTML = "Todos os campos tem que ser preenchidos!"
+
+    finalizarAguardar();
+    return false;
+  } else {
+    setInterval(sumirMensagem, 5000);
+  }
+
+  if(regex.test(emailVar)) {
+    cardErro.style.display = "block";
+    mensagemErro.innerHTML = "Email Inválido!"
+
+    finalizarAguardar();
+    return false;
+  } else {
+    setInterval(sumirMensagem, 5000);
+  }
+
+  if(regexSenha.test(senhaVar)) {
+    cardErro.style.display = "block";
+    mensagemErro.innerHTML = "Senha Inválida!"
 
     finalizarAguardar();
     return false;
