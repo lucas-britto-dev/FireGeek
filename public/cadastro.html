@@ -79,6 +79,11 @@
       </div>
     </header>
     <img src="./assets/imgs/fundo_cadastro.png" class="fundo_cadastro">
+      <div class="alerta_erro">
+        <div class="card_erro" id="cardErro">
+          <span id="mensagemErro"></span>
+        </div>
+      </div>
       <div class="div_cadastro">
           <h2 class="titulo_login_cadastro">Cadastro</h2>
           <p class="p_info">Nome de Usuário</p>
@@ -90,6 +95,7 @@
           <p class="p_info">Confirmar Senha</p>
           <input type="text" id="ipt_confirmar" class="ipt_login_cadastro">
           <p class="p_extras">Já possui uma conta? Entre!</p>
+          <button onclick="cadastrar()" class="btn_cadastrar">Cadastre-se</button>
         </div>
     <footer>
       <span>Feito com carinho por Fire ❤️</span>
@@ -97,3 +103,56 @@
     </footer>
   </body>
 </html>
+<script>
+  function cadastrar() {
+    let userVar = ipt_user.value;
+    let emailVar = ipt_email.value;
+    let senhaVar = ipt_senha.value;
+    let confirmacaoSenha = ipt_confirmar.value;
+
+  if(userVar == "" || emailVar == "" ||senhaVar == "" || confirmacaoSenha == "") {
+    cardErro.style.display = "block";
+    mensagemErro.innerHTML = "Todos os campos tem que ser preenchidos!"
+
+    finalizarAguardar();
+    return false;
+  } else {
+    setInterval(sumirMensagem, 5000);
+  }
+
+  fetch("/usuarios/cadastrar", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      userServer: userVar,
+      emailServer: emailVar,
+      senhaServer: senhaVar
+    }),
+  })
+    .then(function (resposta) {
+      console.log("resposta: ", resposta);
+
+      if(resposta.ok) {
+        cardErro.style.display = "block";
+        mensagemErro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para a tela de login...";
+
+        setTimeout(() => {
+          window.location = "login.html";
+        }, "2000");
+
+        limparFormulario ();
+        finalizarAguardar();
+      } else {
+        throw "Houve um erro ao tentar realizar o cadastro!";
+      }
+    })
+    .catch(function (resposta) {
+      console.log(`#ERRO: ${resposta}`);
+      finalizarAguardar();
+    });
+
+    return false;
+  }
+</script>
