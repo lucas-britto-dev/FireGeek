@@ -323,6 +323,25 @@ svg {
   color: #fff;
 }
 
+.fundo_cadastro {
+  width: 1720px;
+  height: 780px;
+  opacity: 42%;
+  border-radius: 32px;
+  margin: 100px;
+  position: absolute;
+}
+
+.div_cadastro {
+  font-family: "Space Grotesk";
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 150px 1028px 150px 240px;
+  align-items: center;
+  gap: 20px;
+}
+
 footer {
   background-color: #1e1e1e;
   width: 100vw;
