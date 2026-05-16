@@ -279,10 +279,48 @@ svg {
   margin-bottom: 10px;
 }
 
-.div_login {
-  background-image: url("./assets/imgs/fundo_login.jpg");
-  background-size: cover;
+.fundo_login {
+  width: 1720px;
+  height: 780px;
+  opacity: 42%;
+  border-radius: 32px;
   margin: 100px;
+  position: absolute;
+}
+
+.div_login {
+  font-family: "Space Grotesk";
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 250px 279px 250px 1028px;
+  align-items: center;
+  gap: 20px;
+}
+
+.titulo_login_cadastro {
+  font-size: 64px;
+}
+
+.p_info {
+  font-size: 24px;
+}
+
+.p_extras {
+  font-size: 20px;
+}
+
+.ipt_login_cadastro {
+  height: 48px;
+  width: 613px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: solid 1px #ff4d00;
+  border-radius: 20px;
+  background: none;
+  font-family: "Poppins";
+  font-size: 20px;
+  color: #fff;
 }
 
 footer {
