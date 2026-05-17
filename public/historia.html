@@ -1,86 +1,427 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FireGeek - História</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header>
-      <svg viewBox="0 0 215 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M12.3458 42.8625C14.1779 44.3973 16.3476 45.4761 18.6771 46.0104C18.9 46.0833 19.05 45.7917 18.9 45.6458C13.9104 40.8854 16.6521 35.7333 18.6771 33.4104C20.1208 31.7521 22.1771 29.0208 22.0271 25.3583C22.0271 24.9917 22.4021 24.6979 22.6979 24.9188C25.5292 26.3833 27.4646 29.6063 27.9854 32.2417C28.8063 31.4375 29.1042 30.1917 29.1042 29.0938C29.1042 28.7271 29.55 28.4333 29.9229 28.7271C32.6042 31.1438 37.2208 39.3458 29.7729 45.7896C29.625 45.9375 29.7729 46.2313 29.9229 46.1583C32.1813 45.5663 34.3051 44.5465 36.1792 43.1542C48.3188 33.7792 40.4229 17.1542 35.2833 11.6625C34.6146 11.0021 33.4229 11.4417 33.4229 12.3938C33.3479 14.3729 32.7521 16.5688 31.1896 18.0333C29.9979 13.0542 26.0271 7.39792 20.3667 4.61459C19.6229 4.24792 18.7292 4.83334 18.8042 5.63959C18.95 12.4521 14.5063 16.7896 10.6333 22.4292C7.20626 27.4813 4.97293 36.7833 12.3458 42.8625Z"
-          fill="url(#paint0_linear_0_1)"
-        />
-        <path
-          d="M52.64 46V18H70.24V22.8H57.92V29.56H69.28V34.36H57.92V46H52.64ZM74.1672 46V26.16H79.2072V46H74.1672ZM76.6872 23.84C75.7805 23.84 75.0072 23.5467 74.3672 22.96C73.7539 22.3733 73.4472 21.6 73.4472 20.64C73.4472 19.68 73.7539 18.9067 74.3672 18.32C75.0072 17.7333 75.7805 17.44 76.6872 17.44C77.6205 17.44 78.3939 17.7333 79.0072 18.32C79.6205 18.9067 79.9272 19.68 79.9272 20.64C79.9272 21.6 79.6205 22.3733 79.0072 22.96C78.3939 23.5467 77.6205 23.84 76.6872 23.84ZM84.7922 46V26.16H89.7522V28.4H90.4722C90.7655 27.6 91.2455 27.0133 91.9122 26.64C92.6055 26.2667 93.4055 26.08 94.3122 26.08H96.7122V30.56H94.2322C92.9522 30.56 91.8989 30.9067 91.0722 31.6C90.2455 32.2667 89.8322 33.3067 89.8322 34.72V46H84.7922ZM108.988 46.56C107.015 46.56 105.268 46.1467 103.748 45.32C102.255 44.4667 101.082 43.28 100.228 41.76C99.4018 40.2133 98.9884 38.4 98.9884 36.32V35.84C98.9884 33.76 99.4018 31.96 100.228 30.44C101.055 28.8933 102.215 27.7067 103.708 26.88C105.202 26.0267 106.935 25.6 108.908 25.6C110.855 25.6 112.548 26.04 113.988 26.92C115.428 27.7733 116.548 28.9733 117.348 30.52C118.148 32.04 118.548 33.8133 118.548 35.84V37.56H104.108C104.162 38.92 104.668 40.0267 105.628 40.88C106.588 41.7333 107.762 42.16 109.148 42.16C110.562 42.16 111.602 41.8533 112.268 41.24C112.935 40.6267 113.442 39.9467 113.788 39.2L117.908 41.36C117.535 42.0533 116.988 42.8133 116.268 43.64C115.575 44.44 114.642 45.1333 113.468 45.72C112.295 46.28 110.802 46.56 108.988 46.56ZM104.148 33.8H113.428C113.322 32.6533 112.855 31.7333 112.028 31.04C111.228 30.3467 110.175 30 108.868 30C107.508 30 106.428 30.3467 105.628 31.04C104.828 31.7333 104.335 32.6533 104.148 33.8Z"
-          fill="url(#paint1_linear_0_1)"
-        />
-        <path
-          d="M132.554 46.56C130.634 46.56 128.888 46.1333 127.314 45.28C125.768 44.4 124.528 43.1333 123.594 41.48C122.688 39.8 122.234 37.76 122.234 35.36V28.64C122.234 25.04 123.248 22.28 125.274 20.36C127.301 18.4133 130.048 17.44 133.514 17.44C136.954 17.44 139.608 18.36 141.474 20.2C143.368 22.0133 144.314 24.48 144.314 27.6V27.76H139.114V27.44C139.114 26.4533 138.901 25.56 138.474 24.76C138.074 23.96 137.461 23.3333 136.634 22.88C135.808 22.4 134.768 22.16 133.514 22.16C131.648 22.16 130.181 22.7333 129.114 23.88C128.048 25.0267 127.514 26.5867 127.514 28.56V35.44C127.514 37.3867 128.048 38.96 129.114 40.16C130.181 41.3333 131.674 41.92 133.594 41.92C135.514 41.92 136.914 41.4133 137.794 40.4C138.674 39.3867 139.114 38.1067 139.114 36.56V36.16H132.474V31.68H144.314V46H139.434V43.32H138.714C138.528 43.7733 138.221 44.2533 137.794 44.76C137.394 45.2667 136.781 45.6933 135.954 46.04C135.128 46.3867 133.994 46.56 132.554 46.56ZM158.559 46.56C156.585 46.56 154.839 46.1467 153.319 45.32C151.825 44.4667 150.652 43.28 149.799 41.76C148.972 40.2133 148.559 38.4 148.559 36.32V35.84C148.559 33.76 148.972 31.96 149.799 30.44C150.625 28.8933 151.785 27.7067 153.279 26.88C154.772 26.0267 156.505 25.6 158.479 25.6C160.425 25.6 162.119 26.04 163.559 26.92C164.999 27.7733 166.119 28.9733 166.919 30.52C167.719 32.04 168.119 33.8133 168.119 35.84V37.56H153.679C153.732 38.92 154.239 40.0267 155.199 40.88C156.159 41.7333 157.332 42.16 158.719 42.16C160.132 42.16 161.172 41.8533 161.839 41.24C162.505 40.6267 163.012 39.9467 163.359 39.2L167.479 41.36C167.105 42.0533 166.559 42.8133 165.839 43.64C165.145 44.44 164.212 45.1333 163.039 45.72C161.865 46.28 160.372 46.56 158.559 46.56ZM153.719 33.8H162.999C162.892 32.6533 162.425 31.7333 161.599 31.04C160.799 30.3467 159.745 30 158.439 30C157.079 30 155.999 30.3467 155.199 31.04C154.399 31.7333 153.905 32.6533 153.719 33.8ZM181.645 46.56C179.671 46.56 177.925 46.1467 176.405 45.32C174.911 44.4667 173.738 43.28 172.885 41.76C172.058 40.2133 171.645 38.4 171.645 36.32V35.84C171.645 33.76 172.058 31.96 172.885 30.44C173.711 28.8933 174.871 27.7067 176.365 26.88C177.858 26.0267 179.591 25.6 181.565 25.6C183.511 25.6 185.205 26.04 186.645 26.92C188.085 27.7733 189.205 28.9733 190.005 30.52C190.805 32.04 191.205 33.8133 191.205 35.84V37.56H176.765C176.818 38.92 177.325 40.0267 178.285 40.88C179.245 41.7333 180.418 42.16 181.805 42.16C183.218 42.16 184.258 41.8533 184.925 41.24C185.591 40.6267 186.098 39.9467 186.445 39.2L190.565 41.36C190.191 42.0533 189.645 42.8133 188.925 43.64C188.231 44.44 187.298 45.1333 186.125 45.72C184.951 46.28 183.458 46.56 181.645 46.56ZM176.805 33.8H186.085C185.978 32.6533 185.511 31.7333 184.685 31.04C183.885 30.3467 182.831 30 181.525 30C180.165 30 179.085 30.3467 178.285 31.04C177.485 31.7333 176.991 32.6533 176.805 33.8ZM195.691 46V18H200.731V33.48H201.451L208.011 26.16H214.571L205.411 35.76L214.891 46H208.411L201.451 38.12H200.731V46H195.691Z"
-          fill="url(#paint2_linear_0_1)"
-        />
-        <defs>
-          <linearGradient
-            id="paint0_linear_0_1"
-            x1="25.0148"
-            y1="4.50278"
-            x2="25.0148"
-            y2="46.1698"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop offset="0.423077" stop-color="#FF4D00" />
-            <stop offset="1" stop-color="#FFD700" />
-          </linearGradient>
-          <linearGradient
-            id="paint1_linear_0_1"
-            x1="133"
-            y1="7"
-            x2="133"
-            y2="58"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop offset="0.423077" stop-color="#FF4D00" />
-            <stop offset="1" stop-color="#FFD700" />
-          </linearGradient>
-          <linearGradient
-            id="paint2_linear_0_1"
-            x1="133"
-            y1="7"
-            x2="133"
-            y2="58"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop offset="0.245192" stop-color="#006FFF" />
-            <stop offset="1" stop-color="#00F3FF" />
-          </linearGradient>
-        </defs>
-      </svg>
-      <ul class="navbar">
-        <li>
-          <a href="./index.html" class="btn_navbar">Home</a>
-        </li>
-        <li><a href="./historia.html" class="btn_navbar">História</a></li>
-        <li><a href="./artistas.html" class="btn_navbar">Artistas</a></li>
-        <li><a href="./forum.html" class="btn_navbar">Fórum</a></li>
-        <li><a href="./sobre.html" class="btn_navbar">Sobre Mim</a></li>
-      </ul>
-      <div class="div_user">
-        <a href="./login.html" class="btn_login">Login</a>
-        <a href="./cadastro.html" class="btn_cadastro">Cadastro</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FireGeek - História</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="sombra_azul">
+    <svg viewBox="0 0 215 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M12.3458 42.8625C14.1779 44.3973 16.3476 45.4761 18.6771 46.0104C18.9 46.0833 19.05 45.7917 18.9 45.6458C13.9104 40.8854 16.6521 35.7333 18.6771 33.4104C20.1208 31.7521 22.1771 29.0208 22.0271 25.3583C22.0271 24.9917 22.4021 24.6979 22.6979 24.9188C25.5292 26.3833 27.4646 29.6063 27.9854 32.2417C28.8063 31.4375 29.1042 30.1917 29.1042 29.0938C29.1042 28.7271 29.55 28.4333 29.9229 28.7271C32.6042 31.1438 37.2208 39.3458 29.7729 45.7896C29.625 45.9375 29.7729 46.2313 29.9229 46.1583C32.1813 45.5663 34.3051 44.5465 36.1792 43.1542C48.3188 33.7792 40.4229 17.1542 35.2833 11.6625C34.6146 11.0021 33.4229 11.4417 33.4229 12.3938C33.3479 14.3729 32.7521 16.5688 31.1896 18.0333C29.9979 13.0542 26.0271 7.39792 20.3667 4.61459C19.6229 4.24792 18.7292 4.83334 18.8042 5.63959C18.95 12.4521 14.5063 16.7896 10.6333 22.4292C7.20626 27.4813 4.97293 36.7833 12.3458 42.8625Z"
+        fill="url(#paint0_linear_0_1)" />
+      <path
+        d="M52.64 46V18H70.24V22.8H57.92V29.56H69.28V34.36H57.92V46H52.64ZM74.1672 46V26.16H79.2072V46H74.1672ZM76.6872 23.84C75.7805 23.84 75.0072 23.5467 74.3672 22.96C73.7539 22.3733 73.4472 21.6 73.4472 20.64C73.4472 19.68 73.7539 18.9067 74.3672 18.32C75.0072 17.7333 75.7805 17.44 76.6872 17.44C77.6205 17.44 78.3939 17.7333 79.0072 18.32C79.6205 18.9067 79.9272 19.68 79.9272 20.64C79.9272 21.6 79.6205 22.3733 79.0072 22.96C78.3939 23.5467 77.6205 23.84 76.6872 23.84ZM84.7922 46V26.16H89.7522V28.4H90.4722C90.7655 27.6 91.2455 27.0133 91.9122 26.64C92.6055 26.2667 93.4055 26.08 94.3122 26.08H96.7122V30.56H94.2322C92.9522 30.56 91.8989 30.9067 91.0722 31.6C90.2455 32.2667 89.8322 33.3067 89.8322 34.72V46H84.7922ZM108.988 46.56C107.015 46.56 105.268 46.1467 103.748 45.32C102.255 44.4667 101.082 43.28 100.228 41.76C99.4018 40.2133 98.9884 38.4 98.9884 36.32V35.84C98.9884 33.76 99.4018 31.96 100.228 30.44C101.055 28.8933 102.215 27.7067 103.708 26.88C105.202 26.0267 106.935 25.6 108.908 25.6C110.855 25.6 112.548 26.04 113.988 26.92C115.428 27.7733 116.548 28.9733 117.348 30.52C118.148 32.04 118.548 33.8133 118.548 35.84V37.56H104.108C104.162 38.92 104.668 40.0267 105.628 40.88C106.588 41.7333 107.762 42.16 109.148 42.16C110.562 42.16 111.602 41.8533 112.268 41.24C112.935 40.6267 113.442 39.9467 113.788 39.2L117.908 41.36C117.535 42.0533 116.988 42.8133 116.268 43.64C115.575 44.44 114.642 45.1333 113.468 45.72C112.295 46.28 110.802 46.56 108.988 46.56ZM104.148 33.8H113.428C113.322 32.6533 112.855 31.7333 112.028 31.04C111.228 30.3467 110.175 30 108.868 30C107.508 30 106.428 30.3467 105.628 31.04C104.828 31.7333 104.335 32.6533 104.148 33.8Z"
+        fill="url(#paint1_linear_0_1)" />
+      <path
+        d="M132.554 46.56C130.634 46.56 128.888 46.1333 127.314 45.28C125.768 44.4 124.528 43.1333 123.594 41.48C122.688 39.8 122.234 37.76 122.234 35.36V28.64C122.234 25.04 123.248 22.28 125.274 20.36C127.301 18.4133 130.048 17.44 133.514 17.44C136.954 17.44 139.608 18.36 141.474 20.2C143.368 22.0133 144.314 24.48 144.314 27.6V27.76H139.114V27.44C139.114 26.4533 138.901 25.56 138.474 24.76C138.074 23.96 137.461 23.3333 136.634 22.88C135.808 22.4 134.768 22.16 133.514 22.16C131.648 22.16 130.181 22.7333 129.114 23.88C128.048 25.0267 127.514 26.5867 127.514 28.56V35.44C127.514 37.3867 128.048 38.96 129.114 40.16C130.181 41.3333 131.674 41.92 133.594 41.92C135.514 41.92 136.914 41.4133 137.794 40.4C138.674 39.3867 139.114 38.1067 139.114 36.56V36.16H132.474V31.68H144.314V46H139.434V43.32H138.714C138.528 43.7733 138.221 44.2533 137.794 44.76C137.394 45.2667 136.781 45.6933 135.954 46.04C135.128 46.3867 133.994 46.56 132.554 46.56ZM158.559 46.56C156.585 46.56 154.839 46.1467 153.319 45.32C151.825 44.4667 150.652 43.28 149.799 41.76C148.972 40.2133 148.559 38.4 148.559 36.32V35.84C148.559 33.76 148.972 31.96 149.799 30.44C150.625 28.8933 151.785 27.7067 153.279 26.88C154.772 26.0267 156.505 25.6 158.479 25.6C160.425 25.6 162.119 26.04 163.559 26.92C164.999 27.7733 166.119 28.9733 166.919 30.52C167.719 32.04 168.119 33.8133 168.119 35.84V37.56H153.679C153.732 38.92 154.239 40.0267 155.199 40.88C156.159 41.7333 157.332 42.16 158.719 42.16C160.132 42.16 161.172 41.8533 161.839 41.24C162.505 40.6267 163.012 39.9467 163.359 39.2L167.479 41.36C167.105 42.0533 166.559 42.8133 165.839 43.64C165.145 44.44 164.212 45.1333 163.039 45.72C161.865 46.28 160.372 46.56 158.559 46.56ZM153.719 33.8H162.999C162.892 32.6533 162.425 31.7333 161.599 31.04C160.799 30.3467 159.745 30 158.439 30C157.079 30 155.999 30.3467 155.199 31.04C154.399 31.7333 153.905 32.6533 153.719 33.8ZM181.645 46.56C179.671 46.56 177.925 46.1467 176.405 45.32C174.911 44.4667 173.738 43.28 172.885 41.76C172.058 40.2133 171.645 38.4 171.645 36.32V35.84C171.645 33.76 172.058 31.96 172.885 30.44C173.711 28.8933 174.871 27.7067 176.365 26.88C177.858 26.0267 179.591 25.6 181.565 25.6C183.511 25.6 185.205 26.04 186.645 26.92C188.085 27.7733 189.205 28.9733 190.005 30.52C190.805 32.04 191.205 33.8133 191.205 35.84V37.56H176.765C176.818 38.92 177.325 40.0267 178.285 40.88C179.245 41.7333 180.418 42.16 181.805 42.16C183.218 42.16 184.258 41.8533 184.925 41.24C185.591 40.6267 186.098 39.9467 186.445 39.2L190.565 41.36C190.191 42.0533 189.645 42.8133 188.925 43.64C188.231 44.44 187.298 45.1333 186.125 45.72C184.951 46.28 183.458 46.56 181.645 46.56ZM176.805 33.8H186.085C185.978 32.6533 185.511 31.7333 184.685 31.04C183.885 30.3467 182.831 30 181.525 30C180.165 30 179.085 30.3467 178.285 31.04C177.485 31.7333 176.991 32.6533 176.805 33.8ZM195.691 46V18H200.731V33.48H201.451L208.011 26.16H214.571L205.411 35.76L214.891 46H208.411L201.451 38.12H200.731V46H195.691Z"
+        fill="url(#paint2_linear_0_1)" />
+      <defs>
+        <linearGradient id="paint0_linear_0_1" x1="25.0148" y1="4.50278" x2="25.0148" y2="46.1698"
+          gradientUnits="userSpaceOnUse">
+          <stop offset="0.423077" stop-color="#FF4D00" />
+          <stop offset="1" stop-color="#FFD700" />
+        </linearGradient>
+        <linearGradient id="paint1_linear_0_1" x1="133" y1="7" x2="133" y2="58" gradientUnits="userSpaceOnUse">
+          <stop offset="0.423077" stop-color="#FF4D00" />
+          <stop offset="1" stop-color="#FFD700" />
+        </linearGradient>
+        <linearGradient id="paint2_linear_0_1" x1="133" y1="7" x2="133" y2="58" gradientUnits="userSpaceOnUse">
+          <stop offset="0.245192" stop-color="#006FFF" />
+          <stop offset="1" stop-color="#00F3FF" />
+        </linearGradient>
+      </defs>
+    </svg>
+    <ul class="navbar">
+      <li>
+        <a href="./index.html" class="btn_navbar">Home</a>
+      </li>
+      <li><a href="./historia.html" class="btn_navbar destaque_azul">História</a></li>
+      <li><a href="./artistas.html" class="btn_navbar">Artistas</a></li>
+      <li><a href="./forum.html" class="btn_navbar">Fórum</a></li>
+      <li><a href="./sobre.html" class="btn_navbar">Sobre Mim</a></li>
+    </ul>
+    <div class="div_user">
+      <a href="./login.html" class="btn_login btn_login_historia">Login</a>
+      <a href="./cadastro.html" class="btn_cadastro btn_azul btn_cadastro_historia">Cadastro</a>
+    </div>
+  </header>
+
+  <section class="section_historia">
+    <div class="div_hero">
+      <div class="div_img_hero">
+        <img src="./assets/imgs/historia/kaiser.png" alt="Kaiser (Blue Lock)">
       </div>
-    </header>
-    <footer>
-      <span>Feito com carinho por Fire ❤️</span>
-      <a href="https://github.com/lucas-britto-dev/FireGeek">Repositório no GitHub</a>
-    </footer>
-  </body>
+      <div class="div_conteudo_hero">
+        <h2>História</h2>
+        <p>A música geek no Brasil, frequentemente chamada de "Rap Nerd", "Rap de Anime", "Rap Geek", representa um dos
+          fenômenos mais dinâmicos, complexos e financeiramente robustos da cultura pop contemporânea nacional.</p>
+        <p>O que se iniciou como uma necessidade técnica de adaptação de trilhas sonoras para a televisão abertas nas
+          décadas de 1980 e 1990 evoluiu para um ecossistema independente e autossustentável, capaz de gerar bilhões de
+          visualizações em plataformas digitais e atrair o interesse de grandes conglomerados de mídia globais.</p>
+        <p>A seguir contarei um pouco de como a música geek surgiu e evoluiu para se transformar no cenário que
+          conhecemos hoje em dia.</p>
+        <p>E se você não conhece a música geek e caiu aqui de paraquedas, se sinta muito bem vindo a conhecer esse
+          estilo tão abrangente mas tão único ao mesmo tempo.</p>
+        <div class="seta_baixo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M12 2.25a.75.75 0 0 1 .75.75v16.19l6.22-6.22a.75.75 0 1 1 1.06 1.06l-7.5 7.5a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 1 1 1.06-1.06l6.22 6.22V3a.75.75 0 0 1 .75-.75Z"
+              clip-rule="evenodd" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main class="main_historia">
+
+    <section class="section_era">
+      <h3 class="titulo_era">1980 - 1999</h3>
+
+      <div class="grid_era">
+        <div class="texto_era">
+          <p>A fundação da música geek no Brasil não foi um movimento autoral espontâneo, mas sim uma respostas
+            funcional às demandas da indústria. Durante a transição das décadas de 1980 para 1990, o Brasil viveu a
+            chamada “Primeira Onda” de animações japonesas em massa, capitaneada por emissoras como a TV Manchete, que
+            buscavam alternativas de baixo custo e alto engajamento para a programação infantil.</p>
+          <p>O marco zero desse fenômeno pode ser localizado na estreia de Os Cavaleiros do Zódiaco em setembro de 1994.
+            Diferente de produções ocidentais anteriores, os animes traziam trilhas sonoras altamente sofisticadas.</p>
+          <p>No Brasil, a Sony Music, percebendo o potencial de consumo dessas trilhas sonoras, adquiriu os direitos
+            para a produção da trilha sonora brasileira oficial de Os Cavaleiros do Zódiaco in 1995. O objetivo não era
+            apenas a exibição televisiva, mas a criação de produtos fonográficos que pudessem ser vendidos em larga
+            escala.</p>
+          <p>Este período consolidou a ideia de que a música era uma extensão indissociável da experiência do fã de
+            anime, criando uma base emocional que perduraria por décadas.</p>
+          <p>Ao lado, podemos visualizar essas aberturas tão icônicas, duvido que nunca tenha escutado nenhuma! kkkk</p>
+        </div>
+
+        <div class="imagens_era">
+          <div class="miniaturas_fotos">
+            <img src="./assets/imgs/historia/dbz.png" alt="Dragon Ball Z">
+            <img src="./assets/imgs/historia/pokemon.png" alt="Pokémon">
+            <img src="./assets/imgs/historia/zodiaco.png" alt="Cavaleiros do Zodíaco">
+          </div>
+
+          <div class="slider_video">
+            <button class="seta_slider" onclick="mudarVideo(this, -1)">&lt;</button>
+            <div class="carrosel_janela">
+              <div class="carrosel_videos" data-index="0">
+                <div class="carrosel_slide">
+                  <iframe src="https://www.youtube.com/embed/yWgWhuN8wc4?si=1aMm_-T28tseESjl"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="carrosel_slide">
+                  <iframe src="https://www.youtube.com/embed/mE8E3nT2U70?si=tNYJ8f36ycUKav9X"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="carrosel_slide">
+                  <iframe src="https://www.youtube.com/embed/Nds9oPVLATc?si=yHtekluDEf0MmaBC"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+            <button class="seta_slider" onclick="mudarVideo(this, 1)">&gt;</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="section_era">
+      <h3 class="titulo_era">2000 - 2011</h3>
+
+      <div class="grid_era">
+        <div class="texto_era">
+          <p>Com a fragmentação da audiência televisiva e o advento da internet banda larga, o consumo de música geek
+            começou a se deslocar para ambiente presenciais e comunidades online. O surgimento de grandes eventos de
+            cultura japonesa, como o Anime Friends (fundado em 2003), criou um palco para bandas que não se limitavam a
+            reproduzir as trilhas oficiais, mas que infudiam elementos de J-Rock e Heavy Metal nas composições, e então,
+            a partir de 2005, a cena começou a ver o surgimento dessas bandas, que buscavam uma sonoridade mais
+            agressiva e técnica.</p>
+          <p> A banda Gaijin Sentai, formada em 2006 em Caraguatatuba, introduziu uma inovação estética significativa ao
+            misturar músicas de anime e tokusatsu com o peso do Heavy Metal e ritmos tradicionais brasileiros, como o
+            maracatu.
+            A Gaijin Sentai não apenas realizou covers, mas compôs material autoral e estabeleceu parcerias
+            internacionais com nomes como Eizo Sakamoto (ex-Anthem e JAM Project) e Yumi Matsuzawa, realizando turnês
+            pela Europa e Japão.</p>
+          <p>Outra banda, a The Kira Justice, de Porto Alegre, exemplica a transição para a era digital. Eleita em 2010
+            como a melhor banda de J-Rock do Brasil pela rádio Animix, o grupo foi pioneiro na distribuição gratuita de
+            álbuns pela internet e no uso intensivo do Myspace e YouTube para engajar fãs. Essa estratégia de “acesso
+            livre” permitiu que bandas de nicho alcançassem estados onde o acesso físico a conveções era limitado,
+            democratizando o consumo da música geek.</p>
+        </div>
+
+        <div class="imagens_era">
+          <div class="miniaturas_fotos">
+            <img src="./assets/imgs/historia/gaijin.png" alt="Gaijin Sentai">
+            <img src="./assets/imgs/historia/thekira.jpg" alt="The Kira Justice">
+          </div>
+
+          <div class="slider_video">
+            <button class="seta_slider" onclick="mudarVideo(this, -1)">&lt;</button>
+            <div class="carrosel_janela">
+              <div class="carrosel_videos" data-index="0">
+                <div class="carrosel_slide">
+                  <iframe src="https://www.youtube.com/embed/eg4tuN4Tj8M?si=EiE79kMOiN4rg9tu"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="carrosel_slide">
+                  <iframe src="https://www.youtube.com/embed/m0c3ZSPAz14?si=UXgOCGqm09deC6y2"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="carrosel_slide">
+                  <iframe src="https://www.youtube.com/embed/rW8SxNPgt_Y?si=fSDQtnGik88Gm0bS"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+            <button class="seta_slider" onclick="mudarVideo(this, 1)">&gt;</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="section_era">
+      <h3 class="titulo_era">2012 - 2014</h3>
+
+      <div class="grid_era">
+        <div class="texto_era">
+          <p>O ano de 2012 marca uma ruptura estrututal na história da música geek brasileira.</p>
+          <p>É o período em que o subgênero conhecido como nerdcore (hiphop com letras focadas em videogames, animes e
+            quadrinhos) granha uma identidade brasileira distinta sob a forma do “rap nerd”.</p>
+          <p>A música geek começou a atingir um sucesso sem precedentes após o grupo 7 Minutoz começar a postar suas
+            produções em 2012. Formado por Lucas A.R.T, Gabriel Rodrigues e Pedro Alvez, o grupo foi um dos primeiros a
+            aplicar a métrica do rap para narrar histórias de personagens da Marvel, DC e, principalmente, animes. A
+            proposta do 7 Minutoz não era apenas musical, mas pedagógica e imersiva: os ouvintes podiam aprender pelo
+            menos
+            parte da biografia de um herói ou vilão através de uma letra bem estruturada.</p>
+          <p>Quase simultaneamente, Player Tauz consolidou o genêro ao focar na psicologia dos personagens e em temas
+            motivacionais. Podemos dizer que inclusive que quem furou essa bolha e levou o rap nerd para além do nicho
+            de
+            animes foi o próprio Tauz.
+          </p>
+          <p>A relação entre esses pioneiros foi fundamental para a construção da cena; o 7 Minutoz realizou
+            colaborações
+            com Tauz quando este ainda era um artista emergente, impulsionando mutuamente o tráfego de visualizações e
+            criando um ecossistema de feats (parcerias) que se tornaria o padrão desse mercado até os dias de hoje.</p>
+        </div>
+
+        <div class="imagens_era">
+          <div class="miniaturas_fotos">
+            <img src="./assets/imgs/historia/AC.png" alt="Rap do Assassin's Creed Tauz">
+            <img src="./assets/imgs/historia/kirito.jpg" alt="Rap do Kirito Tauz">
+            <img src="./assets/imgs/historia/mario.jpg" alt="Duelo de Titãs Mario vs Sonic 7mz">
+          </div>
+
+          <div class="slider_video">
+            <button class="seta_slider" onclick="mudarVideo(this, -1)">&lt;</button>
+            <div class="carrosel_janela">
+              <div class="carrosel_videos" data-index="0">
+                <div class="carrosel_slide">
+                  <iframe src="https://www.youtube.com/embed/CwKz7j24LPg?si=RdgufXfzRQUEllc7"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="carrosel_slide">
+                  <iframe src="https://www.youtube.com/embed/5ZA263x3Xkw?si=3x0QJo-SYxdLh9qG"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="carrosel_slide">
+                  <iframe src="https://www.youtube.com/embed/obYk_yOXE6U?si=_-QAwDyBZSvmro0G"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+            <button class="seta_slider" onclick="mudarVideo(this, 1)">&gt;</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="section_era">
+      <h3 class="titulo_era">2015 - 2019</h3>
+
+      <div class="grid_era">
+        <div class="texto_era">
+          <p>Entre 2015 e 2019, o gênero deixou de ser uma novidade experimental para se tornar uma indústria de
+            entretenimento de alta performance. A diversificação sonora foi o principal motor dessa fase, com a
+            introdução de elementos de Trap, Rock agressivo e melodias românticas.</p>
+          <p>Nesse período podemos dar destaque para quatro principais artistas, sendo eles, VMZ, Felícia Rock e TK
+            Raps.</p>
+          <p>Francisco Sandro Junior, artisticamente conhecido como VMZ, consolidou-se como um dos pilares mais
+            singulares desse período ao introduzir o rap melódico e o sad rap no cenário geek.
+            Assim, abordava os sentimentos dos personagens, trazendo esse lado mais incompreedido á tona.</p>
+          <p>Outro artista determinante foi TK Raps (Leonardo Nascimento), que se autodenomina "O Criador do Agressivo".
+            TK Raps trouxe uma técnica vocal mais próxima do metal e do rap técnico, focando na personificação direta: o
+            cantor assume a identidade do personagem, narrando suas lutas e dores em primeira pessoa.
+          </p>
+          <p>Felícia Rock (Yasmin Felícia) representou uma mudança qualitativa na cena ao unir covers de aberturas
+            clássicas com composições autorais que traziam dilemas da ficção para a realidade. Sua presença foi vital
+            para atrair e representar o público feminino, tratando de temas como superação de preconceitos e dilemas
+            éticos, exemplificados por canções inspiradas em personagens como Naruto.</p>
+        </div>
+
+        <div class="imagens_era">
+          <div class="miniaturas_fotos">
+            <img src="./assets/imgs/historia/fera.jpg" alt="Rap da Fera - VMZ">
+            <img src="./assets/imgs/historia/depressao.jpg" alt="Rap Depressão - VMZ">
+            <img src="./assets/imgs/historia/psicopatia.jpg" alt="Rap da Psicopatia - Felícia Rock">
+          </div>
+
+          <div class="slider_video">
+            <button class="seta_slider" onclick="mudarVideo(this, -1)">&lt;</button>
+            <div class="carrosel_janela">
+              <div class="carrosel_videos" data-index="0">
+                <div class="carrosel_slide">
+                  <iframe src="https://www.youtube.com/embed/POSZDkxB2wI?si=Z95mSsRKVT5CkBX2"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="carrosel_slide">
+                  <iframe src="https://www.youtube.com/embed/Rj_WeIwMHM8?si=VrmOfdG90HC0jSeY"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="carrosel_slide">
+                  <iframe src="https://www.youtube.com/embed/HRdoAPhdVTk?si=hZVn64cYYZ7O-691"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+            <button class="seta_slider" onclick="mudarVideo(this, 1)">&gt;</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="section_era">
+      <h3 class="titulo_era">2020 - 2022</h3>
+
+      <div class="grid_era">
+        <div class="texto_era">
+          <p>O ano de 2020 foi um catalisador para a música geek devido à pandemia de COVID-19, que elevou
+            exponencialmente o consumo de conteúdo digital. Foi neste cenário que o gênero atingiu seu auge comercial e
+            começou a ser tratado pelas grandes gravadoras como um ativo estratégico.</p>
+          <p>Em 17 de maio de 2020, o 7 Minutoz lançou o "Rap da Akatsuki (Naruto) - OS NINJAS MAIS PROCURADOS DO
+            MUNDO", que se tornou a música mais popular de toda a história do rap geek no Brasil, ultrapassando 246
+            milhões de visualizações até meados de 2026. O sucesso foi tão estrondoso que o vídeo passou a ser
+            considerado um marco cultural, gerando incontáveis "reacts", memes e paródias, e solidificando o canal 7
+            Minutoz como um gigante com mais de 10 milhões de inscritos.</p>
+          <p>Após esse grande evento, podemos dizer que não foi somente o canal 7 Minutoz, mas a cena como um todo
+            ganhou um patamar de relevância muito maior do que em todos os outros anos.</p>
+          <p>E algo interessente sobre o Rap Da Akatsuki é que ele popularizou esse modelo de especiais, onde vários
+            artistas se juntam para cada um representar um personagem da obra. E esse modelo segue sendo um dos mais
+            consumidos até os dias de hoje.</p>
+        </div>
+
+        <div class="imagens_era">
+          <div class="miniaturas_fotos">
+            <img src="./assets/imgs/historia/akatsuki.jpg" alt="Rap da Akatsuki - 7 Minutoz">
+            <img src="./assets/imgs/historia/venus.jpg" alt="Venûs - VMZ">
+            <img src="./assets/imgs/historia/minato.jpg" alt="Tipo Minato - MHRAP">
+          </div>
+
+          <div class="slider_video">
+            <button class="seta_slider" onclick="mudarVideo(this, -1)">&lt;</button>
+            <div class="carrosel_janela">
+              <div class="carrosel_videos" data-index="0">
+                <div class="carrosel_slide">
+                  <iframe src="https://www.youtube.com/embed/-oYMo8k22Vw?si=qUKMdXySOoavAOth"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="carrosel_slide">
+                  <iframe src="https://www.youtube.com/embed/7lTfFw0QgFY?si=Qqg1yjTWwP_vcHjg"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="carrosel_slide">
+                  <iframe src="https://www.youtube.com/embed/IaRYwEECq-E?si=lzcJK9CBDbr5qZ-d"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+            <button class="seta_slider" onclick="mudarVideo(this, 1)">&gt;</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="section_era">
+      <h3 class="titulo_era">2023 - 2026</h3>
+
+      <div class="grid_era">
+        <div class="texto_era">
+          <p>Finalmente chegamos ao momento atual da música geek, e do final de 2022 até aqui tivemos muitas mudanças na cena. Sendo elas, o estilo músical predonominante, a qualidade visual das edições dos vídeos, e a implementação de especiais.</p>
+          <p>Primeiro falando sobre o estilo musical que antes era quase que 100% rap/hip-hop, agora isso não é mais um padrão, e atualmente vêmos muitas músicas com algo mais puxado para o rock, trap, funk, pop, orquestral ou até mesmo, acredite se quiser,  piseiro.</p>
+          <p>Dito isso, com o estouro dos especiais, diversos novos artistas ficaram famosos, como M4rkim, Anirap, Henrique Mendonça, Anny, Chrono, Shiny, Shooter e muito mais. E sabe a melhor parte? Cada um deles canta estilos completamente diferentes um do outro e além disso ainda mesclam vários estilos diferentes e essa liberdade com certeza torna a cena geek diferenciada das demais.</p>
+          <p>E todos esses artistas tem milhares ou milhões de views mensalmente, assim podemos dizer que a cena geek não é mais apenas um nicho, ela é um fenômeno cultural completo</p>
+          <p>Com tudo isso, devemos parar e pensar, a música geek brasileira já é algo que faz parte da cultura brasileira e que merece o devido respeito dentro deste espaço que já é tão diverso.</p>
+        </div>
+
+        <div class="imagens_era">
+          <div class="miniaturas_fotos">
+            <img src="./assets/imgs/historia/badend.jpg" alt="Bad End Friends - Pior Versão | Okabe">
+            <img src="./assets/imgs/historia/ekkojpg.jpg" alt="Lapso Temporal | Ekko (Arcane) | Shooter">
+            <img src="./assets/imgs/historia/bastard.jpg" alt="M4rkim - Bastard München (Blue Lock)">
+          </div>
+
+          <div class="slider_video">
+            <button class="seta_slider" onclick="mudarVideo(this, -1)">&lt;</button>
+            <div class="carrosel_janela">
+              <div class="carrosel_videos" data-index="0">
+                <div class="carrosel_slide">
+                  <iframe src="https://www.youtube.com/embed/MaTL7n-RJAc?si=Iqyh0V5wqrAMbnvG"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="carrosel_slide">
+                  <iframe src="https://www.youtube.com/embed/3n-8EPB-nF4?si=ccr9sJ2d22f7yukc"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="carrosel_slide">
+                  <iframe src="https://www.youtube.com/embed/Y-c6a7U7gxw?si=kt_pqTGOw0rOcHTw"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+            <button class="seta_slider" onclick="mudarVideo(this, 1)">&gt;</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+
+  <footer>
+    <span>Feito com carinho por Fire ❤️</span>
+    <a href="https://github.com/lucas-britto-dev/FireGeek">Repositório no GitHub</a>
+  </footer>
+</body>
+
 </html>
+<script>
+  function mudarVideo(botao, direcao) {
+    let slider = botao.parentElement;
+    let videos = slider.querySelector('.carrosel_videos');
+    let slides = videos.children;
+    let totalSlides = slides.length;
+
+    let indexAtual = parseInt(videos.getAttribute('data-index'));
+    indexAtual += direcao;
+
+    if (indexAtual >= totalSlides) {
+      indexAtual = 0;
+    } else if (indexAtual < 0) {
+      indexAtual = totalSlides - 1;
+    }
+
+    videos.setAttribute('data-index', indexAtual);
+    videos.style.transform = `translateX(-${indexAtual * 100}%)`
+  }
+</script>
