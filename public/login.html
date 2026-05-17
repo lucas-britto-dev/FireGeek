@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FireGeek - Login</title>
+    <script src="./js/sessao.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -79,14 +80,25 @@
       </div>
     </header>
       <img src="./assets/imgs/fundo_login.jpg" class="fundo_login">
+      <div class="alerta_erro">
+        <div class="card_erro" id="cardErro">
+          <span id="mensagemErro"></span>
+        </div>
+      </div>
       <div class="div_login">
           <h2 class="titulo_login_cadastro">Login</h2>
           <p class="p_info">Email</p>
           <input type="text" id="ipt_email" class="ipt_login_cadastro">
           <p class="p_info">Senha</p>
-          <input type="text" id="ipt_senha" class="ipt_login_cadastro">
+          <input type="password" id="ipt_senha" class="ipt_login_cadastro">
+          <button onclick="entrar()" class="btn_cadastrar">Login</button>
           <p class="p">Esqueceu a senha?</p>
-          <p class="p_extras">Ainda não tem uma conta? Cadastre-se</p>
+          <p class="p_extras">Ainda não tem uma conta? <a href="./cadastro.html" class="remove_style_a">Cadastre-se</a></p>
+
+          <div id="div_aguardar" class="loading-div">
+            <img src="./assets/imgs/loading-circle.gif" id="loading-gif">
+          </div>
+          <div id="div_erros_login"></div>
         </div>
     <footer>
       <span>Feito com carinho por Fire ❤️</span>
@@ -94,3 +106,73 @@
     </footer>
   </body>
 </html>
+<script>
+  function entrar() {
+    aguardar();
+
+    let emailVar = ipt_email.value;
+    let senhaVar = ipt_senha.value;
+
+    if(emailVar == "" || senhaVar == "") {
+      cardErro.style.display = "block"
+      mensagemErro.innerHTML = "Todos os campos tem que ser preenchidos!";
+      finalizarAguardar();
+      return false;
+    } else {
+      setInterval(sumirMensagem, 5000)
+    }
+    
+    console.log("FORM LOGIN: ", emailVar);
+    console.log("FORM SENHA: ", senhaVar);
+
+    fetch("/usuarios/autenticar", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        emailServer: emailVar,
+        senhaServer: senhaVar
+      })
+    }).then(function (resposta) {
+      console.log("ESTOU NO THEN DO entrar()!");
+
+      if(resposta.ok) {
+        console.log(resposta);
+
+        resposta.json().then(json => {
+          console.log(json);
+          console.log(JSON.stringify(json));
+          sessionStorage.EMAIL_USUARIO = json.email;
+          sessionStorage.USER_USUARIO = json.user;
+          sessionStorage.ID_USUARIO = json.id;
+
+          setTimeout(() => {
+            window.location = "./user.html";
+          }, 1000);
+
+        });
+
+      } else {
+
+        console.log("Houve um erro ao tentar realizar o login!");
+
+        resposta.text().then(texto => {
+          console.error(texto);
+          finalizarAguardar(texto);
+        });
+
+      }
+
+    }).catch((erro) => {
+      console.log(erro);
+    });
+
+    return false;
+  }
+
+  function sumirMensagem() {
+    cardErro.style.display = "none"
+  }
+
+</script>
