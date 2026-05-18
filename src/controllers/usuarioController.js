@@ -45,7 +45,7 @@ function cadastrar(req, res) {
     let email = req.body.emailServer;
     let senha = req.body.senhaServer;
 
-    if (nome == undefined) {
+    if (user == undefined) {
         res.status(400).send("Seu user está undefined!");
     } else if (email == undefined) {
         res.status(400).send("Seu email está undefined!");

@@ -6,7 +6,7 @@ CREATE TABLE `firegeek`.`usuario` (
   `nickname` VARCHAR(45) NOT NULL,
   `email` VARCHAR(60) NOT NULL,
   `senha` VARCHAR(45) NOT NULL,
-  `dtCadastro` DATE NOT NULL,
+  `dtCadastro` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `dtNascimento` DATE NULL,
   `sexo` CHAR(1) NULL,
   PRIMARY KEY (`id`),
