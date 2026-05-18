@@ -56,8 +56,8 @@ svg {
 }
 
 .btn_login:hover {
-  color: #04bffc;
-  text-shadow: 0px 0px 4px #04bffc;
+  color: #ff4d00;
+  text-shadow: 0px 0px 4px #ff4d00;
   scale: 1.05;
 }
 
@@ -72,10 +72,10 @@ svg {
 
 .btn_cadastro:hover {
   background-color: #1e1e1e;
-  border: #04bffc 2px solid;
-  color: #04bffc;
-  box-shadow: 0px 0px 20px #04bffc;
-  text-shadow: 0px 0px 4px #04bffc;
+  border: #ff4d00 2px solid;
+  color: #ff4d00;
+  box-shadow: 0px 0px 20px #ff4d00;
+  text-shadow: 0px 0px 4px #ff4d00;
   scale: 1.05;
 }
 
@@ -606,6 +606,115 @@ svg {
   height: 100%;
   border: none;
 }
+
+
+/* Fórum */
+
+.destaque_laranja {
+  color: #ff4d00;
+  text-shadow: 0px 0px 4px #ff4d00;
+}
+
+.main_forum {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 80vh;
+}
+
+.forum_header_title {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #222;
+  padding-bottom: 20px;
+}
+
+.titulo_forum {
+  font-size: 2.5rem;
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(255, 77, 0, 0.3);
+}
+
+.subtitulo_forum {
+  color: #aaa;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.grid_categorias {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 25px;
+}
+
+.card_categoria {
+  background-color: #161616;
+  border: 1px solid #252525;
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.card_categoria:hover {
+  transform: translateY(-5px);
+  border-color: #ff4d00;
+  box-shadow: 0 8px 25px rgba(255, 77, 0, 0.15);
+}
+
+.categoria_icone {
+  font-size: 2.5rem;
+  background-color: #222;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.categoria_conteudo {
+  flex: 1;
+}
+
+.categoria_tema {
+  color: #04bffc;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.categoria_descricao {
+  color: #b0b0b0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.btn_entrar_categoria {
+  display: inline-block;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #333;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.btn_entrar_categoria:hover {
+  background-color: #ff4d00;
+  border-color: #ff4d00;
+  box-shadow: 0 0 10px rgba(255, 77, 0, 0.4);
+}
+
+
 
 
 /* FOOTER */
