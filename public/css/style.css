@@ -714,7 +714,48 @@ svg {
   box-shadow: 0 0 10px rgba(255, 77, 0, 0.4);
 }
 
+.section_menu {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  font-family: "Space Grotesk";
+  background-color: #1e1e1e;
+  border-right: 1px solid #ff4d00;
+  border-bottom: 1px solid #ff4d00;
+  border-radius: 0 0 20px 0;
+  padding: 10px 40px 10px 10px;
+  box-shadow: 1px 0px 6px #ff4d00;
+}
 
+.div_ola {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  padding-bottom: 15px;
+}
+
+.div_ola img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.div_ola span {
+  font-size: 30px;
+}
+
+.section_menu hr {
+  margin: 0 -40px;
+  border: 0;
+  border-top: 1px solid #ff4d00;
+}
+
+.section_menu a, .section_menu p {
+  text-decoration: none;
+  color: inherit;
+  margin: 10px 0px 5px 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
 
 
 /* FOOTER */
